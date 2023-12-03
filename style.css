@@ -1,0 +1,44 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212129;
+
+  display: grid;
+  grid-template-rows: 70% 30%;
+
+}
+
+.lights__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.light {
+  width: 7rem;
+  height: 7rem;
+
+  border-radius: 100vh;
+
+  background-color: #4c5265;
+}
+
+.start__btn {
+  width: 10rem;
+  height: 5rem;
+  font-size: 2rem;
+  border-radius: 100vh;
+  background-color: #818196;
+
+  margin: 1rem auto;
+}
