@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-clr: #ff7878;
+  --primary-light-clr: #ff0000;
+  --secondary-clr: #74d680;
+  --secondary-light-clr: #378b29
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -31,6 +38,17 @@
   border-radius: 100vh;
 
   background-color: #4c5265;
+  filter: brightness(0.5);
+}
+.light:nth-of-type(2n + 1) {
+  background-color: var(--primary-clr);
+}
+.light:nth-of-type(2n) {
+  background-color: var(--secondary-clr);
+}
+
+.on {
+  filter: brightness(1);
 }
 
 .start__btn {
@@ -41,4 +59,5 @@
   background-color: #818196;
 
   margin: 1rem auto;
+  text-transform: uppercase;
 }
